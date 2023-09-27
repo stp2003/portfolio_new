@@ -26,15 +26,23 @@ class DownloadCVButton extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           boxShadow: const [
-            BoxShadow(color: Colors.blue, offset: Offset(0, -1), blurRadius: 5),
-            BoxShadow(color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
+            BoxShadow(
+              color: Colors.tealAccent,
+              offset: Offset(0, -1),
+              blurRadius: 5,
+            ),
+            BoxShadow(
+              color: Colors.red,
+              offset: Offset(0, 1),
+              blurRadius: 5,
+            ),
           ],
-          gradient: LinearGradient(
+          gradient: const LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             colors: [
               Colors.pink,
-              Colors.blue.shade900,
+              Colors.cyan,
             ],
           ),
         ),
@@ -48,13 +56,11 @@ class DownloadCVButton extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
             ),
-            const SizedBox(
-              width: defaultPadding / 3,
-            ),
+            const SizedBox(width: defaultPadding / 3),
             const Icon(
               FontAwesomeIcons.download,
               color: Colors.white70,
-              size: 15,
+              size: 15.0,
             ),
           ],
         ),
