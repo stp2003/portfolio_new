@@ -62,6 +62,12 @@ List<Project> projectList = [
     'https://github.com/stp2003/WallVortex-Hub',
   ),
   Project(
+    'Chess',
+    'This is a chess app made in flutter. It has smooth UI and very great UX.',
+    'assets/images/chess.png',
+    'https://github.com/stp2003/Chess',
+  ),
+  Project(
     'Medicine Reminder App',
     'Introducing the extraordinary "Medicine Reminder App" - a state-of-the-art Flutter UI application that redefines healthcare accessibility and efficiency. Seamlessly crafted, this app empowers users to effortlessly choose time for their medicine.',
     'assets/images/doctor.png',
