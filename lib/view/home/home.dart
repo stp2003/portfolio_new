@@ -9,12 +9,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MainView(
-      pages: [
-        const Introduction(),
-        ProjectsView(),
-        Certifications(),
-      ],
+    return SafeArea(
+      child: MainView(
+        pages: [
+          const Introduction(),
+          ProjectsView(),
+          Certifications(),
+        ],
+      ),
     );
   }
 }
