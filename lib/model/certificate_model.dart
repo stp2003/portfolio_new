@@ -58,7 +58,7 @@ List<CertificateModel> certificateList = [
     name: 'Learn Flutter and Dart',
     organization: 'Udemy',
     date: 'Oct 2023',
-    skills: 'Flutter',
+    skills: 'Flutter . Dart',
     credential:
         'https://www.udemy.com/certificate/UC-01cce0ea-a2ca-46ad-a1fa-4e58193db7b0/',
   ),
@@ -66,7 +66,7 @@ List<CertificateModel> certificateList = [
     name: 'Java Collections Framework + APIs',
     organization: 'Udemy',
     date: 'Oct 2023',
-    skills: 'Java, APIs, Generics',
+    skills: 'Java . APIs . Generics',
     credential:
         'https://www.udemy.com/certificate/UC-34f3eb2a-a026-419e-aabf-088327cd07e1/',
   ),

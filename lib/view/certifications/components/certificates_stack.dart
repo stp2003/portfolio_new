@@ -76,7 +76,7 @@ class CertificateStack extends StatelessWidget {
                         color: Colors.grey,
                         overflow: TextOverflow.ellipsis,
                       ),
-                    )
+                    ),
                   ],
                 ),
               ),

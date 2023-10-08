@@ -18,10 +18,24 @@ class ProjectLinks extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Text(
-              'Check on Github',
-              style: TextStyle(color: Colors.white),
-              overflow: TextOverflow.ellipsis,
+            TextButton(
+              onPressed: () {
+                launchUrl(Uri.parse(projectList[index].link));
+              },
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.resolveWith<Color>(
+                  (Set<MaterialState> states) {
+                    if (states.contains(MaterialState.hovered)) {
+                      return Colors.lightGreenAccent;
+                    }
+                    return Colors.white;
+                  },
+                ),
+              ),
+              child: const Text(
+                'Check on Github',
+                overflow: TextOverflow.ellipsis,
+              ),
             ),
             IconButton(
               onPressed: () {
