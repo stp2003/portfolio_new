@@ -54,4 +54,20 @@ List<CertificateModel> certificateList = [
     credential:
         'https://www.coursera.org/account/accomplishments/verify/YCDAWWN2BRHE?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=pdf_header_button&utm_product=course',
   ),
+  CertificateModel(
+    name: 'Learn Flutter and Dart',
+    organization: 'Udemy',
+    date: 'Oct 2023',
+    skills: 'Flutter',
+    credential:
+        'https://www.udemy.com/certificate/UC-01cce0ea-a2ca-46ad-a1fa-4e58193db7b0/',
+  ),
+  CertificateModel(
+    name: 'Java Collections Framework + APIs',
+    organization: 'Udemy',
+    date: 'Oct 2023',
+    skills: 'Java, APIs, Generics',
+    credential:
+        'https://www.udemy.com/certificate/UC-34f3eb2a-a026-419e-aabf-088327cd07e1/',
+  ),
 ];
