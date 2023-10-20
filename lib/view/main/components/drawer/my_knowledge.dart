@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'knowledge.dart';
+import 'knowledge_text_style.dart';
 
-class Knowledges extends StatelessWidget {
-  const Knowledges({super.key});
+class MyKnowledge extends StatelessWidget {
+  const MyKnowledge({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +18,11 @@ class Knowledges extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
         ),
-        KnowledgeText(knowledge: 'Flutter, Dart'),
-        KnowledgeText(knowledge: 'Java, DSA'),
-        KnowledgeText(knowledge: 'Git, Github'),
-        KnowledgeText(knowledge: 'Android Development'),
+        KnowledgeTextStyle(knowledge: 'Flutter, Dart'),
+        KnowledgeTextStyle(knowledge: 'Java, DSA'),
+        KnowledgeTextStyle(knowledge: 'Git, Github'),
+        KnowledgeTextStyle(knowledge: 'Android Development'),
+        KnowledgeTextStyle(knowledge: 'Kotlin'),
       ],
     );
   }

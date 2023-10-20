@@ -30,6 +30,22 @@ class ContactIcon extends StatelessWidget {
             },
             icon: SvgPicture.asset('assets/icons/github.svg'),
           ),
+          IconButton(
+            onPressed: () {
+              launchUrl(
+                Uri.parse('https://www.instagram.com/shashwat._22/'),
+              );
+            },
+            icon: SvgPicture.asset(
+              'assets/icons/instagram.svg',
+              width: 18,
+              height: 18,
+              colorFilter: const ColorFilter.mode(
+                Colors.white54,
+                BlendMode.srcIn,
+              ),
+            ),
+          ),
           const Spacer(),
         ],
       ),

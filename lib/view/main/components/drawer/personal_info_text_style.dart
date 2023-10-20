@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../res/constants.dart';
 
-class AreaInfoText extends StatelessWidget {
-  const AreaInfoText({
+class PersonalInfoTextStyle extends StatelessWidget {
+  const PersonalInfoTextStyle({
     super.key,
     required this.title,
     required this.text,

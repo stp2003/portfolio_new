@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../res/constants.dart';
 
-class DrawerImage extends StatelessWidget {
-  const DrawerImage({super.key});
+class ProfileImage extends StatelessWidget {
+  const ProfileImage({super.key});
 
   @override
   Widget build(BuildContext context) {

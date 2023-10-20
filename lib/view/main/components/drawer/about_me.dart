@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_new/res/constants.dart';
 
-import 'drawer_image.dart';
+import 'profile_image.dart';
 
-class About extends StatelessWidget {
-  const About({super.key});
+class AboutMe extends StatelessWidget {
+  const AboutMe({super.key});
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -14,11 +14,13 @@ class About extends StatelessWidget {
         child: Column(
           children: [
             const Spacer(flex: 2),
-            const DrawerImage(),
+            const ProfileImage(),
             const Spacer(),
             Text(
               'Shashwat Shandilya',
-              style: Theme.of(context).textTheme.titleSmall,
+              style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                    letterSpacing: 0.8,
+                  ),
             ),
             const SizedBox(height: defaultPadding / 4),
             const Text(

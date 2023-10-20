@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../res/constants.dart';
-import 'header_info.dart';
+import 'personal_info_text_style.dart';
 
 class PersonalInfo extends StatelessWidget {
   const PersonalInfo({super.key});
@@ -12,14 +12,18 @@ class PersonalInfo extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SizedBox(height: defaultPadding / 2),
-        AreaInfoText(title: 'Contact', text: '9336908109'),
-        AreaInfoText(title: 'Email', text: 'tshashwat856@gmail.com'),
-        AreaInfoText(title: 'Leetcode', text: 'shashwat_22'),
-        AreaInfoText(title: 'Github', text: 'stp2003'),
+        PersonalInfoTextStyle(title: 'Contact', text: '9336908109'),
+        PersonalInfoTextStyle(title: 'Email', text: 'tshashwat856@gmail.com'),
+        PersonalInfoTextStyle(title: 'Leetcode', text: 'shashwat_22'),
+        PersonalInfoTextStyle(title: 'Github', text: 'stp2003'),
         SizedBox(height: defaultPadding),
         Text(
           'Skills',
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+            letterSpacing: 0.8,
+          ),
         ),
         SizedBox(height: defaultPadding),
       ],

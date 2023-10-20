@@ -3,9 +3,9 @@ import 'package:portfolio_new/view/main/components/drawer/contact_icons.dart';
 import 'package:portfolio_new/view/main/components/drawer/personal_info.dart';
 
 import '../../../../res/constants.dart';
-import 'about.dart';
+import 'about_me.dart';
 import 'footer_drawer.dart';
-import 'knowledges.dart';
+import 'my_knowledge.dart';
 import 'my_skill.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -18,7 +18,7 @@ class CustomDrawer extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            const About(),
+            const AboutMe(),
             Container(
               color: bgColor,
               child: const Padding(
@@ -28,7 +28,7 @@ class CustomDrawer extends StatelessWidget {
                   children: [
                     PersonalInfo(),
                     MySKills(),
-                    Knowledges(),
+                    MyKnowledge(),
                     Divider(),
                     SizedBox(height: defaultPadding),
                     ContactIcon(),
