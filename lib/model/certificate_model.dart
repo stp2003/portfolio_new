@@ -70,4 +70,11 @@ List<CertificateModel> certificateList = [
     credential:
         'https://www.udemy.com/certificate/UC-34f3eb2a-a026-419e-aabf-088327cd07e1/',
   ),
+  CertificateModel(
+    name: 'Flutter Animations',
+    organization: 'MindLuster',
+    date: 'nov 2023',
+    skills: 'Flutter . Dart . Animations . Hero',
+    credential: 'https://www.mindluster.com/storage/cer/12161485656.jpg',
+  ),
 ];
