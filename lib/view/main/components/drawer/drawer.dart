@@ -4,6 +4,7 @@ import 'package:portfolio_new/view/main/components/drawer/personal_info.dart';
 
 import '../../../../res/constants.dart';
 import 'about.dart';
+import 'footer_drawer.dart';
 import 'knowledges.dart';
 import 'my_skill.dart';
 
@@ -29,10 +30,11 @@ class CustomDrawer extends StatelessWidget {
                     MySKills(),
                     Knowledges(),
                     Divider(),
-                    SizedBox(
-                      height: defaultPadding,
-                    ),
+                    SizedBox(height: defaultPadding),
                     ContactIcon(),
+                    SizedBox(height: defaultPadding),
+                    FooterDrawer(),
+                    SizedBox(height: defaultPadding / 2),
                   ],
                 ),
               ),
