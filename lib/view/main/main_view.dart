@@ -24,12 +24,8 @@ class MainView extends StatelessWidget {
         child: Column(
           children: [
             kIsWeb && !Responsive.isLargeMobile(context)
-                ? const SizedBox(
-                    height: defaultPadding * 2,
-                  )
-                : const SizedBox(
-                    height: defaultPadding / 2,
-                  ),
+                ? const SizedBox(height: defaultPadding * 2)
+                : const SizedBox(height: defaultPadding / 2),
             const SizedBox(
               height: 80,
               child: TopNavigationBar(),

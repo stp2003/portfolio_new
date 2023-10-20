@@ -4,8 +4,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../res/constants.dart';
 
-class ConnectButton extends StatelessWidget {
-  const ConnectButton({super.key});
+class WhatsAppConnectButton extends StatelessWidget {
+  const WhatsAppConnectButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -33,13 +33,15 @@ class ConnectButton extends StatelessWidget {
             ),
             boxShadow: const [
               BoxShadow(
-                  color: Colors.teal,
-                  offset: Offset(0, -1),
-                  blurRadius: defaultPadding / 4),
+                color: Colors.teal,
+                offset: Offset(0, -1),
+                blurRadius: defaultPadding / 4,
+              ),
               BoxShadow(
-                  color: Colors.red,
-                  offset: Offset(0, 1),
-                  blurRadius: defaultPadding / 4),
+                color: Colors.red,
+                offset: Offset(0, 1),
+                blurRadius: defaultPadding / 4,
+              ),
             ],
           ),
           child: Row(
@@ -55,9 +57,10 @@ class ConnectButton extends StatelessWidget {
               Text(
                 'Whatsapp',
                 style: Theme.of(context).textTheme.labelSmall!.copyWith(
-                    color: Colors.white,
-                    letterSpacing: 1.2,
-                    fontWeight: FontWeight.bold),
+                      color: Colors.white,
+                      letterSpacing: 1.2,
+                      fontWeight: FontWeight.bold,
+                    ),
               ),
             ],
           ),

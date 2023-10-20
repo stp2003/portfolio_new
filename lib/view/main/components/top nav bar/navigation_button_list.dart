@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_new/view%20model/controller.dart';
 
-import 'navigation_button.dart';
+import 'navigation_button_text_theme.dart';
 
 class NavigationButtonList extends StatelessWidget {
   const NavigationButtonList({super.key});
@@ -16,7 +16,7 @@ class NavigationButtonList extends StatelessWidget {
           scale: value,
           child: Row(
             children: [
-              NavigationTextButton(
+              NavigationButtonTextTheme(
                 onTap: () {
                   controller.animateToPage(
                     0,
@@ -28,7 +28,7 @@ class NavigationButtonList extends StatelessWidget {
               ),
               // if (!Responsive.isLargeMobile(context))
               //   NavigationTextButton(onTap: () {}, text: 'About me'),
-              NavigationTextButton(
+              NavigationButtonTextTheme(
                 onTap: () {
                   controller.animateToPage(
                     1,
@@ -38,7 +38,7 @@ class NavigationButtonList extends StatelessWidget {
                 },
                 text: 'Projects',
               ),
-              NavigationTextButton(
+              NavigationButtonTextTheme(
                 onTap: () {
                   controller.animateToPage(
                     2,

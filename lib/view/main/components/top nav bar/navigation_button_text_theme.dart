@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class NavigationTextButton extends StatelessWidget {
+class NavigationButtonTextTheme extends StatelessWidget {
   final VoidCallback onTap;
   final String text;
 
-  const NavigationTextButton({
+  const NavigationButtonTextTheme({
     super.key,
     required this.onTap,
     required this.text,
