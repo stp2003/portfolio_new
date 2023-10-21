@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_new/view/projects/components/project_deatail.dart';
+import 'package:portfolio_new/view/projects/components/project_detail.dart';
 
 import '../../../model/project_model.dart';
 import '../../../res/constants.dart';
 import '../../../view model/getx_controllers/projects_controller.dart';
-import 'image_viewer.dart';
+import 'project_image_viewer.dart';
 
 class ProjectStack extends StatelessWidget {
   final controller = Get.put(ProjectController());
@@ -23,7 +23,7 @@ class ProjectStack extends StatelessWidget {
         controller.onHover(index, value);
       },
       onTap: () {
-        ImageViewer(context, projectList[index].image);
+        ProjectImageViewer(context, projectList[index].image);
       },
       borderRadius: BorderRadius.circular(30),
       child: AnimatedContainer(

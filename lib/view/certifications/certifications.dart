@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_new/view%20model/getx_controllers/certification_controller.dart';
-import 'package:portfolio_new/view/projects/components/title_text.dart';
+import 'package:portfolio_new/view/projects/components/project_title_text.dart';
 
 import '../../res/constants.dart';
 import '../../view model/responsive.dart';
@@ -22,7 +22,7 @@ class Certifications extends StatelessWidget {
             const SizedBox(
               height: defaultPadding,
             ),
-          const TitleText(prefix: 'Certifications & ', title: 'License'),
+          const ProjectTitleText(prefix: 'Certifications & ', title: 'License'),
           const SizedBox(
             height: defaultPadding,
           ),

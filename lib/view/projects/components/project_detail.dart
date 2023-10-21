@@ -49,12 +49,8 @@ class ProjectDetail extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
         ),
         const Spacer(),
-        ProjectLinks(
-          index: index,
-        ),
-        const SizedBox(
-          height: defaultPadding / 2,
-        ),
+        ProjectLinks(index: index),
+        const SizedBox(height: defaultPadding / 2),
       ],
     );
   }
