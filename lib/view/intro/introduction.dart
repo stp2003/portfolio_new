@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_new/view%20model/responsive.dart';
+import 'package:portfolio_new/view/intro/components/follow_me_home.dart';
 import 'package:portfolio_new/view/intro/components/intro_body.dart';
 import 'package:portfolio_new/view/intro/components/side_menu_button.dart';
-import 'package:portfolio_new/view/intro/components/social_media_list.dart';
 
 class Introduction extends StatelessWidget {
   const Introduction({super.key});
@@ -15,13 +15,13 @@ class Introduction extends StatelessWidget {
             width: MediaQuery.sizeOf(context).width * 0.01,
           ),
           if (!Responsive.isLargeMobile(context))
-            MenuButton(
+            SideMenuButton(
               onTap: () => Scaffold.of(context).openDrawer(),
             ),
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.02,
           ),
-          if (!Responsive.isLargeMobile(context)) const SocialMediaIconList(),
+          if (!Responsive.isLargeMobile(context)) const FollowMeHome(),
           SizedBox(
             width: MediaQuery.sizeOf(context).width * 0.07,
           ),

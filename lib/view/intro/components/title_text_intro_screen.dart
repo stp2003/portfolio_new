@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyPortfolioText extends StatelessWidget {
-  const MyPortfolioText({
+class TitleTextIntroScreen extends StatelessWidget {
+  const TitleTextIntroScreen({
     super.key,
     required this.start,
     required this.end,

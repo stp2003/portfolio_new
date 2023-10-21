@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class AnimatedSubtitleText extends StatelessWidget {
+class SubtitleTextTheme extends StatelessWidget {
   final double start;
   final double end;
   final String text;
   final bool gradient;
 
-  const AnimatedSubtitleText({
+  const SubtitleTextTheme({
     super.key,
     required this.start,
     required this.end,

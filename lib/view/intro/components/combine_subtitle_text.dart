@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/view/intro/components/animated_subtitle_text.dart';
+import 'package:portfolio_new/view/intro/components/subtitle_text_theme.dart';
 
 import '../../../view model/responsive.dart';
 
@@ -13,38 +13,39 @@ class CombineSubtitleText extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         const Responsive(
-          desktop: AnimatedSubtitleText(start: 30, end: 40, text: 'Flutter '),
-          largeMobile:
-              AnimatedSubtitleText(start: 30, end: 25, text: 'Flutter '),
-          mobile: AnimatedSubtitleText(start: 25, end: 20, text: 'Flutter '),
-          tablet: AnimatedSubtitleText(start: 40, end: 30, text: 'Flutter '),
+          desktop: SubtitleTextTheme(start: 30, end: 40, text: 'Flutter '),
+          largeMobile: SubtitleTextTheme(start: 30, end: 25, text: 'Flutter '),
+          mobile: SubtitleTextTheme(start: 25, end: 20, text: 'Flutter '),
+          tablet: SubtitleTextTheme(start: 40, end: 30, text: 'Flutter '),
         ),
         (kIsWeb && Responsive.isLargeMobile(context)
             ? const Responsive(
-                desktop: AnimatedSubtitleText(
+                desktop: SubtitleTextTheme(
                     start: 30, end: 40, text: 'Developer ', gradient: true),
-                largeMobile: AnimatedSubtitleText(
+                largeMobile: SubtitleTextTheme(
                     start: 30, end: 25, text: 'Developer ', gradient: true),
-                mobile: AnimatedSubtitleText(
+                mobile: SubtitleTextTheme(
                     start: 25, end: 20, text: 'Developer ', gradient: true),
-                tablet: AnimatedSubtitleText(
+                tablet: SubtitleTextTheme(
                     start: 40, end: 30, text: 'Developer ', gradient: true),
               )
             : ShaderMask(
                 shaderCallback: (bounds) {
-                  return const LinearGradient(colors: [
-                    Colors.pink,
-                    Colors.blue,
-                  ]).createShader(bounds);
+                  return const LinearGradient(
+                    colors: [
+                      Colors.pink,
+                      Colors.blue,
+                    ],
+                  ).createShader(bounds);
                 },
                 child: const Responsive(
-                  desktop: AnimatedSubtitleText(
+                  desktop: SubtitleTextTheme(
                       start: 30, end: 40, text: 'Developer ', gradient: false),
-                  largeMobile: AnimatedSubtitleText(
+                  largeMobile: SubtitleTextTheme(
                       start: 30, end: 25, text: 'Developer ', gradient: false),
-                  mobile: AnimatedSubtitleText(
+                  mobile: SubtitleTextTheme(
                       start: 25, end: 20, text: 'Developer ', gradient: true),
-                  tablet: AnimatedSubtitleText(
+                  tablet: SubtitleTextTheme(
                       start: 40, end: 30, text: 'Developer ', gradient: false),
                 ),
               )),

@@ -4,10 +4,10 @@ import 'package:flutter/material.dart';
 import '../../../res/constants.dart';
 import '../../../view model/responsive.dart';
 import 'animated_description_text.dart';
-import 'animated_texts_components.dart';
-import 'combine_subtitle.dart';
-import 'download_button.dart';
-import 'headline_text.dart';
+import 'animated_image_container.dart';
+import 'combine_subtitle_text.dart';
+import 'download_cv_button.dart';
+import 'title_text_intro_screen.dart';
 
 class IntroBody extends StatelessWidget {
   const IntroBody({super.key});
@@ -23,15 +23,11 @@ class IntroBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               if (!Responsive.isDesktop(context))
-                SizedBox(
-                  height: size.height * 0.06,
-                ),
+                SizedBox(height: size.height * 0.06),
               if (!Responsive.isDesktop(context))
                 Row(
                   children: [
-                    SizedBox(
-                      width: size.width * 0.23,
-                    ),
+                    SizedBox(width: size.width * 0.23),
                     const AnimatedImageContainer(
                       width: 150,
                       height: 200,
@@ -39,14 +35,12 @@ class IntroBody extends StatelessWidget {
                   ],
                 ),
               if (!Responsive.isDesktop(context))
-                SizedBox(
-                  height: size.height * 0.1,
-                ),
+                SizedBox(height: size.height * 0.1),
               const Responsive(
-                desktop: MyPortfolioText(start: 40, end: 50),
-                largeMobile: MyPortfolioText(start: 40, end: 35),
-                mobile: MyPortfolioText(start: 35, end: 30),
-                tablet: MyPortfolioText(start: 50, end: 40),
+                desktop: TitleTextIntroScreen(start: 40, end: 50),
+                largeMobile: TitleTextIntroScreen(start: 40, end: 35),
+                mobile: TitleTextIntroScreen(start: 35, end: 30),
+                tablet: TitleTextIntroScreen(start: 50, end: 40),
               ),
               if (kIsWeb && Responsive.isLargeMobile(context))
                 Container(

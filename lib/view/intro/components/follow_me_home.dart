@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/view/intro/components/social_media_coloumn.dart';
+import 'package:portfolio_new/view/intro/components/social_media_icon_coloumn.dart';
 
 import '../../../res/constants.dart';
 
-class SocialMediaIconList extends StatelessWidget {
-  const SocialMediaIconList({super.key});
+class FollowMeHome extends StatelessWidget {
+  const FollowMeHome({super.key});
 
   @override
   Widget build(BuildContext context) {

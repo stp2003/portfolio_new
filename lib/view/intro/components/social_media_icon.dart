@@ -22,7 +22,7 @@ class SocialMediaIcon extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: defaultPadding * 0.4),
         child: SvgPicture.asset(
           icon,
-          color: Colors.white,
+          colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
           height: 15,
           width: 15,
         ),

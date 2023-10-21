@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 
 import '../../../res/constants.dart';
 
-class MenuButton extends StatelessWidget {
+class SideMenuButton extends StatelessWidget {
   final VoidCallback? onTap;
-  const MenuButton({super.key, this.onTap});
+
+  const SideMenuButton({
+    super.key,
+    this.onTap,
+  });
+
   @override
   Widget build(BuildContext context) {
     return Column(

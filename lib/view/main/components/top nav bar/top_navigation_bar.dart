@@ -20,7 +20,7 @@ class TopNavigationBar extends StatelessWidget {
             padding: const EdgeInsets.all(defaultPadding),
             child: !Responsive.isLargeMobile(context)
                 ? Image.asset('assets/images/batman.png')
-                : MenuButton(
+                : SideMenuButton(
                     onTap: () => Scaffold.of(context).openDrawer(),
                   ),
           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/view/intro/components/social_icon.dart';
+import 'package:portfolio_new/view/intro/components/social_media_icon.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SocialMediaIconColumn extends StatelessWidget {
