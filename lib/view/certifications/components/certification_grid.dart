@@ -35,10 +35,12 @@ class CertificateGrid extends StatelessWidget {
             ),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
-              gradient: const LinearGradient(colors: [
-                Colors.pinkAccent,
-                Colors.blue,
-              ]),
+              gradient: const LinearGradient(
+                colors: [
+                  Colors.pinkAccent,
+                  Colors.blue,
+                ],
+              ),
               boxShadow: [
                 BoxShadow(
                   color: Colors.orange,

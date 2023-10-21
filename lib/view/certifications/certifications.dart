@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio_new/view%20model/getx_controllers/certification_controller.dart';
-import 'package:portfolio_new/view/projects/components/project_title_text.dart';
+import 'package:portfolio_new/view/components/styled_title_text.dart';
 
 import '../../res/constants.dart';
 import '../../view model/responsive.dart';
@@ -19,13 +19,9 @@ class Certifications extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (Responsive.isLargeMobile(context))
-            const SizedBox(
-              height: defaultPadding,
-            ),
-          const ProjectTitleText(prefix: 'Certifications & ', title: 'License'),
-          const SizedBox(
-            height: defaultPadding,
-          ),
+            const SizedBox(height: defaultPadding),
+          const StyledTitleText(prefix: 'Certifications & ', title: 'License'),
+          const SizedBox(height: defaultPadding),
           Expanded(
             child: Responsive(
               desktop: CertificateGrid(

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../../view model/responsive.dart';
 
-class ProjectTitleText extends StatelessWidget {
-  const ProjectTitleText({
+class StyledTitleText extends StatelessWidget {
+  const StyledTitleText({
     super.key,
     required this.prefix,
     required this.title,

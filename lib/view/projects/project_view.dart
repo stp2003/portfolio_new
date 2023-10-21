@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:portfolio_new/res/constants.dart';
 import 'package:portfolio_new/view%20model/getx_controllers/projects_controller.dart';
 import 'package:portfolio_new/view%20model/responsive.dart';
-import 'package:portfolio_new/view/projects/components/project_title_text.dart';
+import 'package:portfolio_new/view/components/styled_title_text.dart';
 
 import 'components/projects_grid.dart';
 
@@ -20,7 +20,7 @@ class ProjectsView extends StatelessWidget {
         children: [
           if (Responsive.isLargeMobile(context))
             const SizedBox(height: defaultPadding),
-          const ProjectTitleText(prefix: 'My', title: 'Projects'),
+          const StyledTitleText(prefix: 'My', title: 'Projects'),
           const SizedBox(height: defaultPadding),
           Expanded(
             child: Responsive(
