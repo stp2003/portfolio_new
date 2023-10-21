@@ -3,7 +3,7 @@ import 'package:portfolio_new/view%20model/responsive.dart';
 import 'package:portfolio_new/view/intro/components/side_menu_button.dart';
 import 'package:portfolio_new/view/main/components/top%20nav%20bar/whatsapp_connect_button.dart';
 
-import '../../../../res/constants.dart';
+import '../../../../utils/constants.dart';
 import 'navigation_button_list.dart';
 
 class TopNavigationBar extends StatelessWidget {

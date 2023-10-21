@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/res/constants.dart';
+import 'package:portfolio_new/utils/constants.dart';
 import 'package:portfolio_new/view%20model/controller.dart';
 import 'package:portfolio_new/view/main/components/top%20nav%20bar/top_navigation_bar.dart';
 

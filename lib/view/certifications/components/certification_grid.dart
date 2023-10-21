@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../model/certificate_model.dart';
-import '../../../res/constants.dart';
+import '../../../utils/constants.dart';
 import '../../../view model/getx_controllers/certification_controller.dart';
 import 'certificates_stack.dart';
 

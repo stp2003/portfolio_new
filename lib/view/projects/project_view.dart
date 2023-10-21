@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio_new/res/constants.dart';
+import 'package:portfolio_new/utils/constants.dart';
 import 'package:portfolio_new/view%20model/getx_controllers/projects_controller.dart';
 import 'package:portfolio_new/view%20model/responsive.dart';
 import 'package:portfolio_new/view/components/styled_title_text.dart';

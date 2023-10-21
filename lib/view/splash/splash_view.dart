@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/res/constants.dart';
+import 'package:portfolio_new/utils/constants.dart';
 import 'package:portfolio_new/view/home/home.dart';
 import 'package:portfolio_new/view/intro/components/animated_image_container.dart';
 import 'package:portfolio_new/view/splash/components/animated_loading_text.dart';

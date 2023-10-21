@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:portfolio_new/view/projects/components/project_detail.dart';
 
 import '../../../model/project_model.dart';
-import '../../../res/constants.dart';
+import '../../../utils/constants.dart';
 import '../../../view model/getx_controllers/projects_controller.dart';
 import 'project_image_viewer.dart';
 

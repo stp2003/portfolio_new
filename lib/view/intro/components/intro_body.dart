@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 
-import '../../../res/constants.dart';
+import '../../../utils/constants.dart';
 import '../../../view model/responsive.dart';
 import 'animated_description_text.dart';
 import 'animated_image_container.dart';

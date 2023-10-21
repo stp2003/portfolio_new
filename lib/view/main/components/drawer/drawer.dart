@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:portfolio_new/view/main/components/drawer/contact_icons.dart';
 import 'package:portfolio_new/view/main/components/drawer/personal_info.dart';
 
-import '../../../../res/constants.dart';
+import '../../../../utils/constants.dart';
 import 'about_me.dart';
 import 'footer_drawer.dart';
 import 'my_knowledge.dart';

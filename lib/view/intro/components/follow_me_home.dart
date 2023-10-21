@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio_new/view/intro/components/social_media_icon_coloumn.dart';
 
-import '../../../res/constants.dart';
+import '../../../utils/constants.dart';
 
 class FollowMeHome extends StatelessWidget {
   const FollowMeHome({super.key});
