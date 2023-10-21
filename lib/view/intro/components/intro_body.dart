@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants.dart';
 import '../../../view model/responsive.dart';
+import '../../components/animated_image_container.dart';
 import 'animated_description_text.dart';
-import 'animated_image_container.dart';
 import 'combine_subtitle_text.dart';
 import 'download_cv_button.dart';
 import 'title_text_intro_screen.dart';

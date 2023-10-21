@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:portfolio_new/utils/constants.dart';
+import 'package:portfolio_new/view/components/animated_image_container.dart';
 import 'package:portfolio_new/view/home/home.dart';
-import 'package:portfolio_new/view/intro/components/animated_image_container.dart';
 import 'package:portfolio_new/view/splash/components/animated_loading_text.dart';
 
 class SplashView extends StatefulWidget {
@@ -43,9 +43,7 @@ class _SplashViewState extends State<SplashView> {
               width: 100,
               height: 100,
             ),
-            SizedBox(
-              height: defaultPadding,
-            ),
+            SizedBox(height: defaultPadding),
             AnimatedLoadingText(),
           ],
         ),
