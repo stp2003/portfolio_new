@@ -52,6 +52,12 @@ class MySKills extends StatelessWidget {
           image: 'assets/icons/bloc.png',
           color: Colors.teal,
         ),
+        AnimatedLinearProgressIndicator(
+          percentage: 0.3,
+          title: 'Supabase',
+          image: 'assets/icons/flutter.png',
+          color: Colors.green,
+        ),
       ],
     );
   }

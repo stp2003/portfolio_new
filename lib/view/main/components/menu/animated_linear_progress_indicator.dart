@@ -29,9 +29,9 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
                 children: [
                   Image.asset(
                     image!,
-                    height: 10,
-                    width: 10,
-                    fit: BoxFit.cover,
+                    height: 15,
+                    width: 15,
+                    fit: BoxFit.fill,
                   ),
                   const SizedBox(width: 5),
                   Text(

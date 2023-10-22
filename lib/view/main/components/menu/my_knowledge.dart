@@ -22,7 +22,7 @@ class MyKnowledge extends StatelessWidget {
         KnowledgeTextStyle(knowledge: 'Java, DSA'),
         KnowledgeTextStyle(knowledge: 'Git, Github'),
         KnowledgeTextStyle(knowledge: 'Android Development'),
-        KnowledgeTextStyle(knowledge: 'Kotlin'),
+        KnowledgeTextStyle(knowledge: 'Kotlin, C++'),
       ],
     );
   }
