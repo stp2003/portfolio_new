@@ -5,7 +5,7 @@ import 'package:portfolio_new/view%20model/controller.dart';
 import 'package:portfolio_new/view/main/components/top%20nav%20bar/top_navigation_bar.dart';
 
 import '../../view model/responsive.dart';
-import 'components/drawer/drawer.dart';
+import 'components/menu/custom_menu.dart';
 import 'components/top nav bar/navigation_button_list.dart';
 
 class MainView extends StatelessWidget {
@@ -19,7 +19,7 @@ class MainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: const CustomDrawer(),
+      drawer: const CustomMenu(),
       body: Center(
         child: Column(
           children: [

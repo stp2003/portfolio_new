@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_new/view/main/components/drawer/contact_icons.dart';
-import 'package:portfolio_new/view/main/components/drawer/personal_info.dart';
+import 'package:portfolio_new/view/main/components/menu/contact_icons.dart';
+import 'package:portfolio_new/view/main/components/menu/personal_info.dart';
 
 import '../../../../utils/constants.dart';
 import 'about_me.dart';
@@ -8,8 +8,8 @@ import 'footer_drawer.dart';
 import 'my_knowledge.dart';
 import 'my_skill.dart';
 
-class CustomDrawer extends StatelessWidget {
-  const CustomDrawer({super.key});
+class CustomMenu extends StatelessWidget {
+  const CustomMenu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class CustomDrawer extends StatelessWidget {
             Container(
               color: bgColor,
               child: const Padding(
-                padding: EdgeInsets.all(defaultPadding / 2),
+                padding: EdgeInsets.all(15.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
