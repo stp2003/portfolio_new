@@ -21,7 +21,7 @@ class AnimatedLinearProgressIndicator extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: defaultPadding / 2),
       child: TweenAnimationBuilder(
         tween: Tween(begin: 0.0, end: percentage),
-        duration: const Duration(seconds: 1),
+        duration: const Duration(seconds: 8),
         builder: (context, value, child) {
           return Column(
             children: [
