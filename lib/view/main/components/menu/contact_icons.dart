@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../utils/constants.dart';
+import 'contact_icon_buttons.dart';
 
 class ContactIcon extends StatelessWidget {
   const ContactIcon({super.key});
@@ -11,42 +10,30 @@ class ContactIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(top: defaultPadding),
-      child: Row(
+      child: const Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Spacer(),
-          IconButton(
-            onPressed: () {
-              launchUrl(
-                Uri.parse('https://www.linkedin.com/in/shashwat-shandilya/'),
-              );
-            },
-            icon: SvgPicture.asset('assets/icons/linkedin.svg'),
+          ContactIconButton(
+            url: 'https://www.linkedin.com/in/shashwat-shandilya/',
+            iconPath: 'assets/icons/linkedin.svg',
+            defaultColor: Colors.white54,
+            hoverColor: Colors.blueAccent,
           ),
-          IconButton(
-            onPressed: () {
-              launchUrl(
-                Uri.parse('https://github.com/stp2003'),
-              );
-            },
-            icon: SvgPicture.asset('assets/icons/github.svg'),
+          SizedBox(width: 15.0),
+          ContactIconButton(
+            url: 'https://github.com/stp2003',
+            iconPath: 'assets/icons/github.svg',
+            defaultColor: Colors.white54,
+            hoverColor: Colors.blueGrey,
           ),
-          IconButton(
-            onPressed: () {
-              launchUrl(
-                Uri.parse('https://www.instagram.com/shashwat._22/'),
-              );
-            },
-            icon: SvgPicture.asset(
-              'assets/icons/instagram.svg',
-              width: 18,
-              height: 18,
-              colorFilter: const ColorFilter.mode(
-                Colors.white54,
-                BlendMode.srcIn,
-              ),
-            ),
+          SizedBox(width: 15.0),
+          ContactIconButton(
+            url: 'https://www.instagram.com/shashwat._22/',
+            iconPath: 'assets/icons/instagram.svg',
+            defaultColor: Colors.white54,
+            hoverColor: Colors.pink,
           ),
-          const Spacer(),
         ],
       ),
     );
