@@ -41,6 +41,7 @@ class AnimatedDescriptionText extends StatelessWidget {
                 'I also know Git and Github.',
               ),
             ],
+            repeatForever: true,
           ),
         );
       },

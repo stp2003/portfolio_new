@@ -20,6 +20,18 @@ List<Project> projectList = [
     'https://github.com/stp2003/Baat-Cheet',
   ),
   Project(
+    'Cinephile',
+    'A Flutter project that uses TMDb-Api to fetch movies using Bloc and following Clean architecture.',
+    'assets/images/cinephile.jpg',
+    'https://github.com/stp2003/Cinephile',
+  ),
+  Project(
+    'Dhagga',
+    'A Thread Like app where you can post images and messages and like them, follow people and get notifications. This app is made by flutter and supabase is used as backend',
+    'assets/images/dhagga.jpg',
+    'https://github.com/stp2003/Dhaagga',
+  ),
+  Project(
     'Virtual Vortex',
     'In this app I have build a complete online meeting app with firebase authentication and Jitse_Meet. In this app you can start a meeting share the meeting link or meeting code to other to join in or you can join the meeting by doing the same. You can share the screen, raise your hand, chat during the meeting mute or unmute if you are host. Yor entite details will be shown in details section that how many meet you joined, on which day and for how many minutes.',
     'assets/images/virtualvortex.png',
