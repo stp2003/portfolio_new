@@ -55,7 +55,6 @@ class _ProjectLinksState extends State<ProjectLinks> {
             ),
           ],
         ),
-        const Spacer(),
         MouseRegion(
           onEnter: (_) {
             setState(() {
@@ -77,7 +76,7 @@ class _ProjectLinksState extends State<ProjectLinks> {
               style: TextStyle(
                 color: onHover ? Colors.orange : Colors.amber,
                 fontWeight: FontWeight.bold,
-                fontSize: 14.0,
+                fontSize: 13.0,
               ),
             ),
           ),
