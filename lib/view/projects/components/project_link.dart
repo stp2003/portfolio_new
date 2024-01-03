@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:lottie/lottie.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../../model/project_model.dart';
@@ -43,12 +43,14 @@ class _ProjectLinksState extends State<ProjectLinks> {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            IconButton(
-              onPressed: () {
+            InkWell(
+              onTap: () {
                 launchUrl(Uri.parse(projectList[widget.index].link));
               },
-              icon: SvgPicture.asset(
-                'assets/icons/github.svg',
+              child: Lottie.asset(
+                'assets/animations/github.json',
+                height: 25.0,
+                width: 25.0,
               ),
             ),
           ],
