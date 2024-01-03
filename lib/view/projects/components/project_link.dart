@@ -4,7 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../../model/project_model.dart';
 
-class ProjectLinks extends StatelessWidget {
+class ProjectLinks extends StatefulWidget {
   final int index;
 
   const ProjectLinks({
@@ -13,6 +13,12 @@ class ProjectLinks extends StatelessWidget {
   });
 
   @override
+  State<ProjectLinks> createState() => _ProjectLinksState();
+}
+
+class _ProjectLinksState extends State<ProjectLinks> {
+  bool onHover = false;
+  @override
   Widget build(BuildContext context) {
     return Row(
       children: [
@@ -20,7 +26,7 @@ class ProjectLinks extends StatelessWidget {
           children: [
             TextButton(
               onPressed: () {
-                launchUrl(Uri.parse(projectList[index].link));
+                launchUrl(Uri.parse(projectList[widget.index].link));
               },
               style: ButtonStyle(
                 foregroundColor: MaterialStateProperty.resolveWith<Color>(
@@ -39,7 +45,7 @@ class ProjectLinks extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {
-                launchUrl(Uri.parse(projectList[index].link));
+                launchUrl(Uri.parse(projectList[widget.index].link));
               },
               icon: SvgPicture.asset(
                 'assets/icons/github.svg',
@@ -48,17 +54,29 @@ class ProjectLinks extends StatelessWidget {
           ],
         ),
         const Spacer(),
-        TextButton(
-          onPressed: () {
-            launchUrl(Uri.parse(projectList[index].link));
+        MouseRegion(
+          onEnter: (_) {
+            setState(() {
+              onHover = true;
+            });
           },
-          child: const Text(
-            'Read More>>',
-            overflow: TextOverflow.ellipsis,
-            style: TextStyle(
-              color: Colors.amber,
-              fontWeight: FontWeight.bold,
-              fontSize: 10.0,
+          onExit: (_) {
+            setState(() {
+              onHover = false;
+            });
+          },
+          child: TextButton(
+            onPressed: () {
+              launchUrl(Uri.parse(projectList[widget.index].link));
+            },
+            child: Text(
+              'Read More>>',
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                color: onHover ? Colors.orange : Colors.amber,
+                fontWeight: FontWeight.bold,
+                fontSize: 14.0,
+              ),
             ),
           ),
         ),
