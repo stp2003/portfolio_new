@@ -16,6 +16,22 @@ class CertificateModel {
 
 List<CertificateModel> certificateList = [
   CertificateModel(
+    name: 'AWS Cloud Practitioner Foundation',
+    organization: 'AWS',
+    date: 'Dec 2023',
+    skills: 'Cloud Computing',
+    credential:
+        'https://www.credly.com/badges/a746b23a-2971-4da5-aa97-254e86b195bb',
+  ),
+  CertificateModel(
+    name: 'Ethnus MERN Stack',
+    organization: 'Ethnus',
+    date: 'Dec 2023',
+    skills: 'MERN',
+    credential:
+        'https://drive.google.com/file/d/1hQpeo1ZWL6Grc6fr2RC0enuwj5Ss-Ekg/view?usp=sharing',
+  ),
+  CertificateModel(
     name: 'Problem Solving',
     organization: 'Hackerrank',
     date: 'May 2022',
